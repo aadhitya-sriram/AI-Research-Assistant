@@ -1,0 +1,30 @@
+# Core LLM & Indexing Framework
+llama-index>=0.10.22
+llama-index-core 
+python-dotenv
+
+# Choose only one of these depending on your LLM setup:
+llama-index-llms-groq
+llama-index-experimental
+
+# NLP / Data Processing
+pandas
+numpy
+scikit-learn
+matplotlib
+beautifulsoup4
+requests
+
+# PDF, CSV, Web Handling
+PyMuPDF              # For PDF parsing (via llama-index-readers-pdf)
+pdfplumber           # Optional for table extraction
+unstructured         # For improved text chunking from documents
+pandas
+
+# Dev Tools
+python-dotenv        # To manage API keys
+tqdm                 # For progress bars
+rich                 # For nicer logging
+
+# Optional: web search tools (if you build search tool)
+serpapi
