@@ -1,4 +1,4 @@
-# 🧠 Aadhitya Sriram AI Research Assistant
+# 🧠 AI Research Assistant
 
 **A modular, extensible, and agent-powered personal research assistant built using the [LlamaIndex](https://github.com/jerryjliu/llama_index) ecosystem.**  
 It runs locally on your Windows machine and leverages custom tools for PDF summarization, data analysis, translation, dictionary lookups, web search, and more.
@@ -39,7 +39,7 @@ aadhitya-sriram-ai-research-assistant/
 ├── requirements.txt        # Project dependencies
 ├── test.py                 # Script to test summarization independently
 └── tools/
-    ├── bibliography.py     # Placeholder
+    ├── bibliography.py     # Placeholder (future)
     ├── dictionary.py       # Fetches word meanings via API
     ├── file_searcher.py    # Locates files in the data/ folder
     ├── note_taker.py       # Saves text notes to notes/ folder
@@ -48,7 +48,7 @@ aadhitya-sriram-ai-research-assistant/
     ├── pdf_reader.py       # Vectorizes and queries PDFs
     ├── summarizer.py       # Structured summarization of PDF content
     ├── translator.py       # Async translation using Google Translate
-    ├── visualizer.py       # Placeholder
+    ├── visualizer.py       # Placeholder (future)
     └── web_search.py       # Performs DuckDuckGo-based web search
 ```
 
@@ -84,7 +84,7 @@ Create a `.env` file in the root directory for keys and config (optional).
 
 ```env
 # Example: If using GROQ or other APIs
-SERPAPI_API_KEY=your_key_here
+API_KEY=your_key_here
 ```
 
 ---
@@ -125,25 +125,13 @@ The agent selects the appropriate tool and responds accordingly.
 
 ---
 
-## 🧪 Testing PDF Summarizer
-
-You can run:
-
-```bash
-python test.py
-```
-
-This uses the summarization prompt with a hardcoded PDF text to verify output formatting and quality.
-
----
-
 ## 🔧 Future Enhancements
 
-- [ ] Add bibliography parsing and citation manager
-- [ ] Build a UI with Streamlit or Gradio
-- [ ] Enable visual chart generation in `visualizer.py`
-- [ ] OCR fallback for scanned PDFs is partially implemented
-- [ ] Live documentation at `/docs`
+- Add bibliography parsing and citation manager
+- Build a UI with Streamlit or Gradio
+- Enable visual chart generation in `visualizer.py`
+- OCR fallback for scanned PDFs is partially implemented
+- Live documentation at `/docs`
 
 ---
 
